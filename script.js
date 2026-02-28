@@ -26,3 +26,5 @@ btn.addEventListener('click', () => {
     // Optional: Turn the background gold
     document.body.style.background = "#2c2c00";
 });
+
+// There is no message.
