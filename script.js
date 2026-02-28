@@ -12,3 +12,17 @@ btn.addEventListener('mouseover', () => {
 btn.addEventListener('click', () => {
     alert("You actually caught it!");
 });
+
+const message = document.getElementById('glory-message');
+
+btn.addEventListener('click', () => {
+    // Hide the button so it doesn't run away anymore
+    btn.style.display = 'none';
+    
+    // Show the glorious message
+    message.innerText = "🏆 ALL HAIL THE CHOSEN ONE! 🏆\nYOU HAVE DEFEATED THE UNCLICKABLE.";
+    message.style.display = 'block';
+    
+    // Optional: Turn the background gold
+    document.body.style.background = "#2c2c00";
+});
